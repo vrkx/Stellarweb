@@ -1,0 +1,25 @@
+body {
+    background: linear-gradient(#309459, #242c6b);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+#jsonDisplay {
+    background-color: #101010;
+    border-color: #151515;
+    border-radius: 6px;
+    border-width: 2px;
+    width: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 20px;
+}
