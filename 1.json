@@ -1,0 +1,12 @@
+{
+
+   "template1" : {
+
+    "Title" : "Have you seen issues?",
+    "Desc" : "Report em' to us!",
+    "Image" : "/imgs/Issues.png",
+    "Color" : "#ff9200"
+   }
+
+ 
+}
