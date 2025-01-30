@@ -1,0 +1,12 @@
+{
+
+   "template1" : {
+
+    "Title" : "We have a News Website!",
+    "Desc" : "If you want to be updated without opening the launcher, check it out!",
+    "Image" : "News.png",
+    "Color" : "#0051FF"
+   }
+
+ 
+}

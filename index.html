@@ -5,12 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stellar</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/e1cea92282.js" crossorigin="anonymous"></script>
 </head>
 <body>
    
+    <div class="container">
     <h1> <i class="fa-solid fa-newspaper"></i> Stellar News and Updates</h1>
+    <p>Stellar Web for News And Updates [Mostly for Launcher JSON]</p>
+    </div>
+    <div class="NewsContainer">
     <div id="jsonDisplay">
     <script>
         fetch('1.json')
@@ -27,6 +31,26 @@
             })
             .catch(error => console.error('Error fetching JSON:', error));
     </script>
+    
+    </div>
+    <div id="jsonDisplay2">
+        <script>
+            fetch('2.json')
+                .then(response => response.json())
+                .then(data => {
+                    const jsonDisplay = document.getElementById('jsonDisplay2');
+                    const template1 = data.template1;
+                    jsonDisplay.innerHTML = `
+                        <h2 class="title-overlay2">${template1.Title}</h2>
+                        <p class="description2">${template1.Desc}</p>
+                        <img class="jimg2" src="${template1.Image}" alt="Image">
+                    `;
+                    jsonDisplay.style.backgroundColor = template1.Color;
+                })
+                .catch(error => console.error('Error fetching JSON:', error));
+        </script>
+        
+        </div>
     </div>
 </body>
 </html>
