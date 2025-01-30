@@ -1,0 +1,18 @@
+{
+    "title": "Stellar News and Updates",
+    "description": "Stellar Web for News And Updates [Mostly for Launcher JSON]",
+    "items": [
+        {
+            "Title": "Have you seen issues?",
+            "description": "Report them to us!",
+            "image": "Issues.png",
+            "color": "#ff5e00"
+        },
+        {
+            "Title": "News without Launcher",
+            "description": "We have released this website to see news without opening the launcher!",
+            "image": "News.png",
+            "color": "#0051FF"
+        }
+    ]
+}
