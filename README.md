@@ -5,7 +5,7 @@
 # 🔗 Links
 
 -  [DeepSeek AI](https://www.deepseek.com) for providing the awesome functionality.
--  [Website](https://vrkx.github.io/Stellarweb/) for inspiring this project.
+-  [Website](https://vrkx.github.io/Stellarweb/) to access
 
  # 📃 Credits
  **Made using [DeepSeek AI](https://www.deepseek.com)**
