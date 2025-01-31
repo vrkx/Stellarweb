@@ -16,52 +16,26 @@
     </div>
 
     <div class="NewsContainer">
+
         <div class="container">
             
             <div id="items"></div>
         </div>
-    
-        <script>
-          
-            async function fetchData() {
-                try {
-                    const response = await fetch('News.json');
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    const data = await response.json();
-                    displayData(data);
-                } catch (error) {
-                    console.error('There was a problem with the fetch operation:', error);
-                }
-            }
-    
-           
-            function displayData(data) {
 
-                const itemsContainer = document.getElementById('items');
-                data.items.forEach(item => {
-                    const box = document.createElement('div');
-                    box.className = 'box';
-                    box.style.backgroundColor = item.color;
+        
     
-                    const image = document.createElement('img');
-                    image.src = item.image;
-                    image.alt = item.description;
-    
-                    const content = document.createElement('div');
-                    content.innerHTML = `<h2>${item.Title}</h2><p>${item.description}</p>`;
-                    
-                    box.appendChild(image);
-                    box.appendChild(content);
-                    itemsContainer.appendChild(box);
-                });
-            }
-    
-           
-            fetchData();
-        </script>
+        
+        <div class="container">
+            
+            <div id="oitems"></div>
+        </div>
+
+      
+       
+
     </div>
+    <script src="/js/main.js"></script>
+    <script src="/js/old.js"></script>
 </body>
 <footer>
     <h2 class="ooter">made with ❤ by vrkx, for stellar </h2>

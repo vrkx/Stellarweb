@@ -17,6 +17,13 @@ body {
   font-family: Arial, sans-serif;
 }
 
+.olds {
+
+opacity: 0.5;
+
+}
+
+
 .box .content {
   flex-grow: 1; /* Allow the content to grow and fill the remaining space */
   word-wrap: break-word; /* Ensure text wraps within the container */
@@ -78,6 +85,13 @@ font-size: 13px;
 .box:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 30px rgba(255, 255, 255, 0.5);
+}
+
+.date {
+
+  font-size: 14px;
+  font-weight: bold;
+  opacity: 0.3;
 }
 
 
