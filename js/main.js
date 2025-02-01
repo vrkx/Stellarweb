@@ -1,40 +1,25 @@
+const navLinks = document.querySelectorAll('nav a');
 
-async function fetchData() {
-    try {
-        const response = await fetch('/json/News.json');
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        const data = await response.json();
-        displayData(data);
-    } catch (error) {
-        console.error('There was a problem with the fetch operation:', error);
+navLinks.forEach(link => {
+    link.addEventListener('click', function (e) {
+        // Remove the 'active' class from all links
+        navLinks.forEach(link => link.classList.remove('active'));
+
+        // Add the 'active' class to the clicked link
+        this.classList.add('active');
+    });
+});
+
+function isMobileDevice() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
+// Function to handle mobile restriction
+function handleMobileRestriction() {
+    if (isMobileDevice()) {
+        // Redirect mobile users to a different page
+        window.location.href = 'mobile.html'; // Replace with your desired URL
     }
 }
-
-
-function displayData(data) {
-
-    const itemsContainer = document.getElementById('items');
-    data.items.forEach(item => {
-        const box = document.createElement('div');
-        box.className = 'box';
-        box.style.backgroundColor = item.color;
-
-        const image = document.createElement('img');
-        image.src = item.image;
-        image.alt = item.description;
-
-
-        
-        const content = document.createElement('div');
-        content.innerHTML = `<h2>${item.Title}</h2><p>${item.description}</p> <p class="date">${item.date}</p>`;
-        
-        box.appendChild(image);
-        box.appendChild(content);
-        itemsContainer.appendChild(box);
-    });
-}
-
-
-fetchData();
+// Run the mobile restriction check when the page loads
+handleMobileRestriction();

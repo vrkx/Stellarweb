@@ -1,13 +1,28 @@
 body {
-  background: linear-gradient(#309459, #242c6b);
-  height: 100vh;
+  background: #202020;
+  height: 100%;
   margin: 0;
   display: flex;
+  width: 100%;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   font-family: Arial, sans-serif;
   color: white;
+}
+
+
+
+.restriction-message {
+  text-align: center;
+  padding: 20px;
+  background-color: #101010;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.restriction-message h1 {
+  color: #ffffff;
 }
 
 .container {
@@ -17,6 +32,214 @@ body {
   font-family: Arial, sans-serif;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.InfoL {
+  background: linear-gradient(#30945a00, #242c6b);
+  margin-top: 145px;
+  width: 100%;
+  height: 540px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+
+
+
+
+.launcher {
+
+margin-top: 50px;
+margin-bottom: 60px;
+
+}
+
+.InfoL h1 {
+  font-size: 2.1rem;
+  
+  margin-bottom:10px;
+}
+
+.InfoL p {
+  font-size: 16ypx;
+  text-align: center;
+  flex-grow: 1; /* Allow the content to grow and fill the remaining space */
+  word-wrap: break-word; /* Ensure text wraps within the container */
+font-weight: normal;
+}
+
+.InfoF {
+  background: linear-gradient(#242c6b, #246b46);
+  width: 100%;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.InfoF h1 {
+  font-size: 2.1rem;
+  
+
+  margin-bottom:10px;
+}
+
+.DownloadBT {
+  background-color: #101010;
+
+  opacity: 0.7;
+  margin-bottom: 150px;
+  padding: 15px;
+  border-radius: 6px;
+  border: white solid 2px;
+}
+
+
+.faq {
+
+margin-top: 20px;
+
+}
+
+.faqbox {
+
+  width: 650px;
+  background-color: #050505;
+  margin-top: 10px;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+ }
+
+
+.InfoF p {
+  font-size: 16ypx;
+  text-align: center;
+  flex-grow: 1; /* Allow the content to grow and fill the remaining space */
+  word-wrap: break-word; /* Ensure text wraps within the container */
+font-weight: normal;
+}
+
+
+
+.InfoI {
+  background: linear-gradient(#246b46, #246b4600);
+  width: 100%;
+  height: 800px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+a {
+
+  
+    margin: 0;
+    /* height: 102px; */
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-decoration: auto;
+
+
+}
+
+.InfoI h1 {
+  font-size: 2.1rem;
+  margin-top: 50px;
+  margin-bottom:10px;
+}
+
+
+
+.InfoI p {
+  font-size: 16ypx;
+  text-align: center;
+  flex-grow: 1; /* Allow the content to grow and fill the remaining space */
+  word-wrap: break-word; /* Ensure text wraps within the container */
+font-weight: normal;
+}
+
+/* Ensure the body and html take up the full height and width */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* Styling for the header */
+header {
+  border: #101010;
+  background-color: #101010;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center; /* Center items vertically */
+  width: 100%; /* Ensure the header spans the full width */
+}
+
+/* Styling for the logo */
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: auto; /* Push the logo to the left */
+}
+
+/* Styling for the navigation container */
+.nav-container {
+  display: flex
+;
+  justify-content: center;
+  padding-right: 50px;
+  flex-grow: 1;
+}
+
+nav a.active {
+  background-color: #333; /* Blue background for active tab */
+  color: white; /* White text for active tab */
+}
+
+/* Styling for the navigation buttons */
+nav {
+  display: flex;
+  gap: 15px;
+}
+
+.content {
+  padding: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #333;
+}
+
+/* Optional: Add some spacing for the main content */
+main {
+  padding: 20px;
+}
 .olds {
 
 opacity: 0.5;
