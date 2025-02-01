@@ -6,7 +6,7 @@
             "Title": "Private Test's in Stellar",
             "description": "We are currently testing the private test's in Stellar for a fresh release!",
             "date" : "2024-01-31",
-            "image": "/imgs/l.png",
+            "image": "l.png",
             "color": "#34e718",
             "isold" : false
         },
@@ -14,7 +14,7 @@
             "Title": "Have you joined our server?",
             "description": "We are giving more updates about stellar development on our discord server, so join!",
             "date" : "2024-01-31",
-            "image": "/imgs/Discord.png",
+            "image": "Discord.png",
             "color": "#7289da",
             "isold" : false
         }

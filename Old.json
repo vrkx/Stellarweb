@@ -6,7 +6,7 @@
             "Title": "[OLD] Have you seen issues?",
             "description": "Report them to us!",
             "date" : "2024-01-29",
-            "image": "/imgs/Issues.png",
+            "image": "Issues.png",
             "color": "#ff5e00",
             "isold" : true
         },
@@ -14,7 +14,7 @@
             "Title": "[OLD] News without Launcher",
             "description": "We have released this website to see news without opening the launcher!",
             "date" : "2024-01-28",
-            "image": "/imgs/News.png",
+            "image": "News.png",
             "color": "#0051FF",
             "isold" : true
         }
