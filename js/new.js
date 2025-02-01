@@ -1,7 +1,7 @@
 
 async function fetchData() {
     try {
-        const response = await fetch('/json/News.json');
+        const response = await fetch('/Stellarweb/json/News.json');
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
