@@ -57,9 +57,18 @@ body {
 
 .launcher {
 
+transition: background-color 0.3s ease;
 margin-top: 50px;
 margin-bottom: 60px;
 
+box-shadow: 0 0 20px rgba(44, 44, 44, 0.3);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.launcher:hover {
+transform: translateY(-5px);
+box-shadow: 0 5px 30px rgba(0, 0, 0, 0.589);
 }
 
 .InfoL h1 {
@@ -102,7 +111,15 @@ font-weight: normal;
   padding: 15px;
   border-radius: 6px;
   border: white solid 2px;
-}
+  box-shadow: 0 0 20px rgba(44, 44, 44, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  
+  .DownloadBT:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.589);
+  }
 
 
 .faq {
@@ -119,8 +136,15 @@ margin-top: 20px;
   padding: 20px;
   border-radius: 6px;
   text-align: center;
- }
-
+  box-shadow: 0 0 20px rgba(44, 44, 44, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  
+  .faqbox:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.589);
+  }
 
 .InfoF p {
   font-size: 16ypx;
@@ -233,6 +257,10 @@ nav a {
 }
 
 nav a:hover {
+  background-color: #333;
+}
+
+.launcher:hover {
   background-color: #333;
 }
 
