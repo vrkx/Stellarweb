@@ -18,7 +18,7 @@ function isMobileDevice() {
 function handleMobileRestriction() {
     if (isMobileDevice()) {
         // Redirect mobile users to a different page
-        window.location.href = '/Stellarweb/mobile.html'; // Replace with your desired URL
+        window.location.href = '/Stellarweb/mobile'; // Replace with your desired URL
     }
 }
 // Run the mobile restriction check when the page loads
